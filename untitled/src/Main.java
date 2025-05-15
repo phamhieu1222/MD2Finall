@@ -96,7 +96,7 @@ public class Main {
         System.out.print("Read from File will delete all contacts, continue anyway? (y/n): ");
         if (scanner.nextLine().equalsIgnoreCase("y")) {
             try {
-                manager.readFromFile("data/contacts.csv");
+                manager.readFromFile("contacts.csv");
                 System.out.println("Read successfully!");
             } catch (IOException e) {
                 System.out.println("Can't read from file!");
@@ -108,7 +108,7 @@ public class Main {
         System.out.print("Write to File will overload all contacts, continue anyway? (y/n): ");
         if (scanner.nextLine().equalsIgnoreCase("y")) {
             try {
-                manager.writeToFile("data/contacts.csv");
+                manager.writeToFile("contacts.csv");
                 System.out.println("Write successfully!");
             } catch (IOException e) {
                 System.out.println("Can't write to file!");
